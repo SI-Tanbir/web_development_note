@@ -1,3 +1,5 @@
 div{
-    color:magenta
+    color:magenta;
+    background-color: blueviolet;
+    margin:5px;
 }
