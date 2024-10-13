@@ -1,0 +1,26 @@
+.header{
+    color:coral;
+    background-image:url("images.jpeg");
+    /* background-repeat: none; */
+    background-repeat: repeat-x;
+    /* background-image: cover; */
+    background-size: contain;
+
+}
+
+.blog{
+    color:indigo;
+    font-size: larger;
+    /* text-decoration: overline; */
+    margin :40px;
+    border:10px solid rebeccapurple;
+    box-shadow: 10px 10px 20px brown; /*eta shaddow tas sundor korar jonno kora hoy */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.second{
+    color:aqua;
+    /* display: none;
+     */
+     /* visibility: hidden;  eta hiddien kore but pace empty thake jay*/ 
+}

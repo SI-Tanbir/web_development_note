@@ -1,0 +1,33 @@
+.external{
+    color:darkcyan;
+}
+.header-image{
+    background-color: dimgrey;
+    background-image: url("images.jpeg");
+    background-repeat: repeat-x;
+    color:rgb(0, 216, 187);
+    border:10px solid rgba(82, 18, 7, 0.24);
+    border-radius:10px
+
+    
+}
+.header-image2{
+    margin:10px 10px;
+    size: 10px;
+    background-image: url("../html/farmer.jpeg");
+    border:2px solid tomato;
+    box-shadow: 10px 10px 20px blueviolet;
+    /* background-repeat: no-repeat; */
+    background-size:cover;
+    height: 100px;
+    border-radius: 5px;
+
+    
+
+}
+.lorem-para{
+    display: inline;
+}
+.lorem-heading,.image1{
+    display: inline;
+}
