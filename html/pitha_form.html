@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+        label {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="displayheader">
+        <h3>Please Fill up the Form</h3>
+        <label for="name">Your name: <input type="text" id="name"></label><br>
+        <label for="email">Your email: <input type="email" id="email"></label><br>
+        <label for="phone">Phone: <input type="number" id="phone"></label>
+
+        <fieldset>
+            <legend>Pick one pitha</legend>
+            <label><input type="radio" name="pitha"> Bhapa</label>
+            <label><input type="radio" name="pitha"> Poli</label>
+            <label><input type="radio" name="pitha"> Majai</label>
+            <label><input type="radio" name="pitha"> Kalai</label>
+            <label><input type="radio" name="pitha"> Phakai</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pick one borta</legend>
+            <label><input type="checkbox" name="borta"> Mach Borta</label>
+            <label><input type="checkbox" name="borta"> Sutki Borta</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Special instructions</legend>
+            <textarea cols="60" rows="3"></textarea>
+        </fieldset>
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </header>
+</body>
+</html>
