@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .island-container img {
+            width: 50vw;
+        }
+
+        .island-1 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+        .island-2{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* flex-direction: column-reverse; */
+            gap: 1rem;
+        }
+        .island-2{
+            grid-template-areas:"content image";
+        }
+            
+
+        .island-2 div{
+            grid-area: content;
+        }
+             
+        .island-2 img{
+            grid-area:image;
+        }  
+
+        @media screen and (max-width:768px){
+            .island-1,.island-2{
+                grid-template-columns: repeat(1,1fr);
+            }
+
+            .island-2{
+                grid-template-areas: "image" "content";
+
+            }
+            .island-2 img,.island-1 img{
+                width: 100vw;
+            }
+        
+            
+
+
+    }
+        </style>
+</head>
+
+<body>
+    <div class="island-container">
+
+        <div class="island-1">
+            <img src="island1.jpg" alt="">
+        
+
+        <div>
+            <h3>hello island</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsum in porro, eum dolor, esse
+                suscipit animi corrupti, iure pariatur ex voluptatem asperiores error placeat iusto doloremque culpa
+                nulla quia.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident totam optio temporibus iusto
+                sapiente id eligendi dicta corrupti accusamus officiis.</p>
+        </div>
+    </div>
+
+
+
+        <div class="island-2">
+            <img src="island2.jpg" alt="">
+
+
+            <div>
+                <h3>hello island</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsum in porro, eum dolor, esse
+                    suscipit animi corrupti, iure pariatur ex voluptatem asperiores error placeat iusto doloremque culpa
+                    nulla quia.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident totam optio temporibus iusto
+                    sapiente id eligendi dicta corrupti accusamus officiis.</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
