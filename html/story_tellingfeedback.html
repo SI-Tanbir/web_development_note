@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        table,th,td{
+            /* margin-top: 10px; */
+            border:1px solid black;
+            border-collapse: collapse;
+        
+        }
+        .tournament{
+            display:flex;
+        }
+    </style>
+    
+</head>
+<body> 
+
+    <fieldset>
+        <legend>Feedback form</legend>
+        <p>Rate the story:</p>
+        <select name="rating">
+            <option value="excellent">Excellent</option>
+            <option value="very_good">Very Good</option>
+            <option value="good">Good</option>
+            <option value="average">Average</option>
+            <option value="poor">Poor</option>
+        </select>
+
+        <p>Your comments:</p>
+        <textarea cols="60" rows="3"></textarea>
+        <input style="display: block;" type="submit" value="submit">
+    </fieldset>
+    <h2>Table Tennis Tournament</h2>
+    <table >
+        <legend class="tournament">Tournament result:</legend>
+        <thead><tr>
+            <th>Round 1</th>
+            <th>Player A</th>
+            <th>player B</th>
+        </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>Match 1</td>
+                <td>John</td>
+                <td>Alice </td>
+            </tr>
+            <tr>
+                <td>Match 2</td>
+                <td>maric</td>
+                <td>satrli </td>
+            </tr>
+            <tr>
+                <th>Round 2</th>
+                <th>Player c</th>
+                <th>player D</th>
+            </tr>
+            <tr>
+                <td>Match 3</td>
+                <td>TRD</td>
+                <td>Alice </td>
+            </tr>
+            <tr>
+                <td>Match 4</td>
+                <td>maric</td>
+                <td>satrli </td>
+            </tr>
+            <tr>
+                <th>final</th>
+                <th>match 5</th>
+                <th>match 6</th>
+            </tr>
+            <tr>
+                <td>champion</td>
+                <td>TBD</td>
+                <td>TRD</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>

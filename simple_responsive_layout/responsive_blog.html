@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .blog-1 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-between;
+            gap:10px;
+            padding-bottom: 1rem;
+        }
+        .blog-1 img{
+            width: 45vw;
+        }
+        .blog-2{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-between;
+            gap:10px
+
+
+        }
+        .blog-2 img{
+            width: 45vw;
+            height: 45vh;
+
+        }
+        @media screen and (max-width:568px){
+            .blog-1{
+                display: grid;
+                grid-template-columns:repeat(1,1fr) ;
+                
+            }
+            .blog-1 img{
+                width:100vw;
+            }
+
+            .blog-2{
+                display: grid;
+                grid-template-columns:repeat(1,1fr) ;
+                
+            }
+            .blog-2 img{
+                width:100vw;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <div class="blog-container">
+            <div class="blog-1"><img src="food.jpeg" alt="">
+                <div>
+                    <h3>Lorem, ipsum dolor sit </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi, repellendus eaque illo
+                        alias consequuntur veniam ipsam quibusdam nobis quo quasi excepturi animi error, distinctio
+                        optio doloremque tempora qui nemo?</p>
+                    <button>See more..</button>
+                </div>
+
+            </div>
+            <div class="blog-2"><img src="nature.jpg" alt="">
+                <div>
+                    <h3>Lorem, ipsum dolor sit </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi, repellendus eaque illo
+                        alias consequuntur veniam ipsam quibusdam nobis quo quasi excepturi animi error, distinctio
+                        optio doloremque tempora qui nemo?</p>
+                    <button>See more..</button>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        margin:0;
+        padding: 0;
+    }
+    .image-container img{
+        width: 100%;
+        height: 100%;
+    }
+    @media screen and (max-width:720px){
+        .image-container{
+            width:100vw; 
+            height:100vh;
+            overflow: hidden;
+        }
+        .image-container img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* display: none; */
+        }
+    }
+    
+</style>
+</head>
+<body>
+    <div class="image-container">
+
+        <img src="nature.jpg" alt="">
+    </div>
+    
+</body>
+</html>
