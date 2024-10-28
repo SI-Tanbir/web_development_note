@@ -9,10 +9,11 @@
 
 
 
+const colors = ['red', 'blue', 'green', 'yellow', 'orange'];
+let reversedColors = [];
 
-const colors = ['red', 'blue', 'green', 'yellow', 'orange']
-
-
-for(let i=colors.length-1;i>=0;i--){
-    console.log(colors[i]);
+for (let i = colors.length - 1; i >= 0; i--) {
+    reversedColors.push(colors[i]); // push it in empty array
 }
+
+console.log(reversedColors);  
