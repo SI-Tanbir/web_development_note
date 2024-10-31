@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <h1>Event delegation</h1>
+
+
+    <ul id="box-container">
+        <li class="item-1">Lorem, ipsum.</li>
+        <li class="item-2">Aspernatur, culpa.</li>
+        <li class="item-3">Voluptatibus, officia?</li>
+        <li class="item-4">Laboriosam, omnis.</li>
+        <li class="item-5">Voluptatibus, amet.</li>
+
+    </ul>
+
+    <button id="addBtn">add new</button>
+
+<script>
+
+const boxSelect=document.getElementById("box-container")
+
+boxSelect.addEventListener('click',function(event){
+
+    event.target.parentNode.removeChild(event.target)
+    // console.log(event.target)
+
+
+
+})
+
+const btnselect=document.getElementById('addBtn');
+btnselect.addEventListener('click',function(){
+
+
+    let select=document.getElementById("box-container");
+    let li =document.createElement('li');
+
+    select.appendChild(li);
+    li.innerText="hello new li added";
+    
+
+    // console.log('hello')
+})
+
+
+</script>
+</body>
+</html>
